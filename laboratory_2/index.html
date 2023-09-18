@@ -128,8 +128,262 @@
             <area shape="rect" coords="381,254,552,485" href="https://archlinux.org/" alt="I use arch btw">
         </map>
     </div>
+    <hr>
     <div id="task_5">
+        <form action="#" id="main_form">
+            <table align="center">
+                <tr>
+                    <td rowspan="2">
+                        <fieldset>
+                            <legend><b>Personal Data</b></legend>
+                            <table class="personal_data">
+                                <tr>
+                                    <td>
+                                        <label for="surname">*Surname:</label>
+                                    </td>
+                                    <td>
+                                        <input 
+                                            type="text" 
+                                            name="surname" 
+                                            id="surname" 
+                                            pattern="[a-zA-Z]+"
+                                            required
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="name">*Name:</label>
+                                    </td>
+                                    <td>
+                                        <input 
+                                            type="text" 
+                                            name="name" 
+                                            id="name" 
+                                            pattern="[a-zA-Z]+"
+                                            required
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="email">Email:</label>
+                                    </td>
+                                    <td>
+                                        <input type="email" name="email" id="email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="birthday">*Birth Date:</label>
+                                    </td>
+                                    <td>
+                                        <input 
+                                            type="date" 
+                                            name="birthday" 
+                                            id="birthday"
+                                            required
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sex:</td>
+                                    <td>
+                                        <label for="male"><b>Male</b></label>
+                                        <input type="radio" name="sex" id="male">
+                                        <label for="female"><b>Female</b></label>
+                                        <input type="radio" name="sex" id="female">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="phone">Phone:</label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" name="phone" id="phone">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="district">District:</label>
+                                    </td>
+                                    <td>
+                                        <select name="district" id="district">
+                                            <option value="Narnia">Narnia</option>
+                                            <option value="Caerleon">Caerleon</option>
+                                            <option value="Lymthurst">Lymthurst</option>
+                                            <option value="Theftford">Theftford</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Studied:</td>
+                                    <td>
+                                        <input type="checkbox" id="licence" name="licence" value="Licence">
+                                        <label for="licence">Licence</label><br>
+                                        <input type="checkbox" id="master" name="master" value="Master">
+                                        <label for="master">Master</label><br>
+                                        <input type="checkbox" id="doctorat" name="doctorat" value="Boat">
+                                        <label for="doctorat">Doctorat</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="extra">Extra:</label>
+                                    </td>
+                                    <td>
+                                        <textarea 
+                                            name="extra" 
+                                            id="extra" 
+                                            placeholder="Type here ..." 
+                                            cols="30" 
+                                            rows="10"
+                                            maxlength="1000"
+                                        ></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                    <td style="vertical-align: top; height: 1px;">
+                        <fieldset style="height: 200px;">
+                            <legend><b>Product Data</b></legend>
+                            <table class="product" style="height: 100%; width: 100%;">
+                                <tr>
+                                    <td>
+                                        <label for="product_name">*Product Name:</label>
+                                    </td>
+                                    <td>
+                                        <input 
+                                            type="text" 
+                                            name="product_name" 
+                                            id="product_name"
+                                            pattern="[a-zA-Z]+"
+                                            required
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="manufacturer">*Manufacturer:</label>
+                                    </td>
+                                    <td>
+                                        <input 
+                                            type="text" 
+                                            name="manufacturer" 
+                                            id="manufacturer"
+                                            pattern="[a-zA-Z]+"
+                                            required
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="count">*Count:</label>
+                                    </td>
+                                    <td>
+                                        <input 
+                                            type="number" 
+                                            name="count" 
+                                            id="count"
+                                            required
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="color">*Color:</label>
+                                    </td>
+                                    <td>
+                                        <input 
+                                            type="color" 
+                                            name="color" 
+                                            id="color"
+                                            required
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="size">*Size:</label>
+                                    </td>
+                                    <td>
+                                        <input 
+                                            type="text" 
+                                            name="size" 
+                                            id="size"
+                                            required
+                                        >
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;">
+                        <fieldset style="height: 119px;">
+                            <legend><b>Bank Data</b></legend>
+                            <table class="bank"  style="height: 100%; width: 100%;">
+                                <tr>
+                                    <td>
+                                        *Card type:
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="card" id="visa" required>
+                                        <label for="visa"><b>Visa</b></label>
+                                        <input type="radio" name="card" id="mastercard" required>
+                                        <label for="mastercard"><b>MasterCard</b></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="card_number">*Card Number:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="card_number" pattern="[1-9]+" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="exp_date">*Expiration Date:</label>
+                                    </td>
+                                    <td>
+                                        <input type="month" name="exp_date" id="exp_date" required>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="reset">Reset</button>
+                        <button type="submit">Sumbit</button>
+                    </td>
+                    <td>*Required</td>
+                </tr>
+            </table>
+        </form>
+        <style>
+            #main_form {
+                border: 1px #000 solid;
+                padding: 1.5rem;
+                width: 650px;
+                margin: 0 auto;
+            }
+            .personal_data textarea {
+                max-width: 147px; 
+                min-width: 147px;
+                min-height: 50px;
+                height: 70px;
+            }
+            .personal_data td:nth-child(1) {
+                width: 100px;
+            }
+        </style>
     </div>
+    <hr>
     <div id="task_6">
 
     </div>
