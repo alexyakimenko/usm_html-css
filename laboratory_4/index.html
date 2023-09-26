@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Loboratory nr.4</title>
+</head>
+<body>
+    <div id="task_1">
+        <div class="block block1"></div>
+        <div class="block block2"></div>
+        <div class="block block3"></div>
+        <div class="block block4"></div>
+        <div class="block block5"></div>
+    </div>
+    <hr>
+    <div id="task_2">
+        <form action="#" class="buy_form">
+            <fieldset class="personal_data">
+                <legend><b>Personal Data</b></legend>
+                <div class="input__group">
+                    <!-- Surname -->
+                    <label for="surname">*Surname:</label>
+                    <input 
+                        type="text" 
+                        name="surname" 
+                        id="surname" 
+                        pattern="[a-zA-Z]+"
+                        required
+                    >
+                    <!-- Name -->
+                    <label for="name">*Name:</label>
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        pattern="[a-zA-Z]+"
+                        required
+                    >
+                    <!-- Email -->
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <!-- Birth Date -->
+                    <label for="birthday">*Birth Date:</label>
+                    <input 
+                        type="date" 
+                        name="birthday" 
+                        id="birthday"
+                        required
+                    >
+                    <!-- Sex -->
+                    <p>Sex:</p>
+                    <div>
+                        <label for="male"><b>Male</b></label>
+                        <input type="radio" name="sex" id="male">
+                        <label for="female"><b>Female</b></label>
+                        <input type="radio" name="sex" id="female">
+                    </div>
+                    <!-- Phone -->
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone">
+                    <!-- District -->
+                    <label for="district">District:</label>
+                    <select name="district" id="district">
+                        <option value="Narnia">Narnia</option>
+                        <option value="Caerleon">Caerleon</option>
+                        <option value="Lymthurst">Lymthurst</option>
+                        <option value="Theftford">Theftford</option>
+                    </select>
+                    <!-- Studied -->
+                    <p>Studied:</p>
+                    <div>
+                        <input type="checkbox" id="licence" name="licence" value="Licence">
+                        <label for="licence">Licence</label><br>
+                        <input type="checkbox" id="master" name="master" value="Master">
+                        <label for="master">Master</label><br>
+                        <input type="checkbox" id="doctorat" name="doctorat" value="Boat">
+                        <label for="doctorat">Doctorat</label>
+                    </div>
+                    <!-- Extra -->
+                    <label for="extra">Extra:</label>
+                    <textarea 
+                        name="extra" 
+                        id="extra" 
+                        placeholder="Type here ..." 
+                        cols="30" 
+                        rows="10"
+                        maxlength="1000"
+                        class="extra_info"
+                    ></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="product_data">
+                <legend><b>Product Data</b></legend>
+                <div class="input__group">
+                    <!-- Product Name -->
+                    <label for="product_name">*Product Name:</label>
+                    <input 
+                        type="text" 
+                        name="product_name" 
+                        id="product_name"
+                        pattern="[a-zA-Z]+"
+                        required
+                    >
+                    <!-- Manufacturer -->
+                    <label for="manufacturer">*Manufacturer:</label>
+                    <input 
+                        type="text" 
+                        name="manufacturer" 
+                        id="manufacturer"
+                        pattern="[a-zA-Z]+"
+                        required
+                    >
+                    <!-- Count -->
+                    <label for="count">*Count:</label>
+                    <input 
+                        type="number" 
+                        name="count" 
+                        id="count"
+                        required
+                    >
+                    <!-- Color -->
+                    <label for="color">*Color:</label>
+                    <input 
+                        type="color" 
+                        name="color" 
+                        id="color"
+                        required
+                    >
+                    <!-- Size -->
+                    <label for="size">*Size:</label>
+                    <input 
+                        type="text" 
+                        name="size" 
+                        id="size"
+                        required
+                    >
+                </div>
+            </fieldset>
+            <fieldset class="bank_data">
+                <legend><b>Bank Data</b></legend>
+                <div class="input__group">
+                    <!-- Card Type -->
+                    <p>*Card type:</p>
+                    <div>
+                        <input type="radio" name="card" id="visa" required>
+                        <label for="visa"><b>Visa</b></label>
+                        <input type="radio" name="card" id="mastercard" required>
+                        <label for="mastercard"><b>MasterCard</b></label>
+                    </div>
+                    <!-- Card Number -->
+                    <label for="card_number">*Card Number:</label>
+                    <input type="text" name="card_number" id="card_number" pattern="[1-9]+" required>
+                    <!-- Expiration Date -->
+                    <label for="exp_date">*Exp. Date:</label>
+                    <input type="month" name="exp_date" id="exp_date" required>
+                </div>
+            </fieldset>
+            <div id="form__cta">
+                <input type="submit">
+                <input type="reset">
+            </div>
+            <p>*Required</p>
+        </form>
+    </div>
+    <hr>
+    <div id="task_3">
+        <ul>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+            <li>Element 4</li>
+            <li>Element 5</li>
+        </ul>
+        <ol>
+            <li>1 Element</li>
+            <li>2 Element</li>
+            <li>3 Element</li>
+            <li>4 Element</li>
+            <li>5 Element</li>
+            <li>6 Element</li>
+            <li>7 Element</li>
+        </ol>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil ut ipsam numquam dolorem qui eaque autem sit accusantium sunt rem enim sint aut consequatur aspernatur quis voluptas, iste iusto maiores earum dolorum facilis illo dolor. Beatae corrupti adipisci maiores debitis neque qui reiciendis dicta nulla excepturi dolorem, harum voluptate repellat hic distinctio sapiente ex ipsam doloremque consequuntur id atque eos! Fugiat blanditiis excepturi tenetur ducimus cum corrupti vel molestiae eos, hic, tempore laudantium reiciendis autem quo sit dicta facere ut, omnis deleniti accusantium. Asperiores explicabo sint tempora pariatur itaque sunt aperiam ex eius at, quam nam mollitia laudantium similique.</p>
+    </div>
+    <hr>
+    <div id="task_4">
+        <a href="https://theuselessweb.com/" target="_blank">Useless WebSite</a>
+    </div>
+</body>
+</html>
