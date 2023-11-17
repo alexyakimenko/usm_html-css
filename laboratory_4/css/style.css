@@ -213,7 +213,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 #task_3 ol li:last-child {
-    background-color: rgb(213, 48, 48);;
+    background-color: rgb(213, 48, 48);
 }
 
 #task_3 ::selection {
