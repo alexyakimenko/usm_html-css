@@ -24,7 +24,7 @@ body {
 
 /* Second & Third Task */
 #task_2_3 {
-    background: radial-gradient(circle, rgba(0,0,2,1) 10%, rgba(9,9,121,1) 20%, rgba(131,58,180,1) 70%);
+    background-image: radial-gradient(circle, rgba(0,0,2,1) 10%, rgba(9,9,121,1) 20%, rgba(131,58,180,1) 70%);
 }
 
 .task_2-table {
@@ -115,6 +115,7 @@ body {
 #task_6 {
     background-image: conic-gradient(from 0deg at 50% 50%, #00FFFFFF 0%, #073AFFFF 100%);
 }
+
 #task_6 iframe {
     max-width: 600px;
     width: 100%;
