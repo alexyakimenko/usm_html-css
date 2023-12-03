@@ -2,8 +2,3 @@
 @use "themes/pulse";
 @use "layout";
 @use "components";
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}

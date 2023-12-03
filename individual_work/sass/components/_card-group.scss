@@ -17,6 +17,11 @@
         .card__group--title svg {
             transform: rotate(90deg);
         }
+        .card {
+            @include abs.breakpoint-down(x-large) {
+                font-size: abs.rem(16px);
+            }
+        }
     }
 
     &--title {
@@ -37,6 +42,9 @@
             }
             svg {
                 @include abs.ease-in-out(300);
+                @include abs.breakpoint-down(small) {
+                    display: none;
+                }
             }
         }
         & a {
@@ -49,7 +57,7 @@
 
     .card {
         height: abs.rem(200px);
-        background-color: var(--background-extra-color);
+        background-color: var(--bg-extra-color);
         border-radius: 18px;
         padding-inline: abs.rem(30px);
         position: relative;
@@ -80,6 +88,9 @@
         &:hover {
             .card__wrapper {
                 transform: translateY(0);
+                p {
+                    color: white;
+                }
             }
         }
 
@@ -118,6 +129,7 @@
             line-height: abs.rem(21px);
             margin-top: abs.rem(8px);
             font-size: 1em;
+            @include abs.ease-in-out(150);
         }
 
         .shadow {
