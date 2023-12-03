@@ -1,0 +1,164 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --bg-color: #181818;
+  --main-color: #17b8bd;
+  --no-name: #17b8bd;
+  --text-color: #53565a;
+  --no-name: #121212;
+  --text-color-hover: #e5f4f4;
+  --error-color: #da3333;
+  --error-extra-color: #791717;
+  --colorful-error-color: #da3333;
+  --colorful-error-extra-color: #791717;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+.navbar {
+  margin-inline: auto;
+  height: 4.1875rem;
+  max-width: 72.75rem;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1400px) {
+  .navbar {
+    max-width: 60.25rem;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar {
+    max-width: 49.375rem;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    max-width: 37.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    max-width: 28.125rem;
+  }
+}
+@media (max-width: 576px) {
+  .navbar {
+    max-width: 100%;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    gap: 1rem;
+    padding-inline: 1rem;
+    justify-content: center;
+  }
+}
+.navbar__main-side {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar__main-side > * {
+  cursor: pointer;
+}
+.navbar__main-side .logo {
+  width: 4.25rem;
+}
+.navbar__main-side .nav li {
+  transition: all ease-in-out 150ms;
+}
+.navbar__main-side .nav li:hover {
+  color: var(--text-color-hover);
+}
+.navbar__user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.navbar__user-actions > * {
+  cursor: pointer;
+  transition: all ease-in-out 150ms;
+}
+.navbar__user-actions > *:hover {
+  color: var(--text-color-hover);
+}
+.navbar__user-actions > *:hover path {
+  fill: var(--text-color-hover);
+}
+.navbar__user-actions .user {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}/*# sourceMappingURL=main.css.map */

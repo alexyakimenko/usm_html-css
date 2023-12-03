@@ -1,0 +1,14 @@
+@use "functions" as f;
+
+@mixin ease-in-out($milliseconds) {
+    transition: all ease-in-out #{$milliseconds}ms;
+}
+
+// Media
+$breakpoints-down: ("x-small": "576px", "small": "768px", "medium": "992px", "large": "1200px", "x-large": "1400px");
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

@@ -1,0 +1,81 @@
+@use "../abstracts" as abs;
+
+.navbar {
+    margin-inline: auto;
+    height: abs.rem(67px);
+    max-width: abs.rem(1164px);
+
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    @include abs.breakpoint-down(x-large) {
+        max-width: abs.rem(964px);
+    }
+    @include abs.breakpoint-down(large) {
+        max-width: abs.rem(790px);
+    }
+    @include abs.breakpoint-down(medium) {
+        max-width: abs.rem(604px);
+    }
+    @include abs.breakpoint-down(small) {
+        max-width: abs.rem(450px);
+    }
+    @include abs.breakpoint-down(x-small) {
+        max-width: 100%;
+        flex-direction: column;
+        padding-top: abs.rem(8px);
+        gap: abs.rem(16px);
+        padding-inline: abs.rem(16px);
+        justify-content: center;
+    }
+
+    &__main-side {
+        display: flex;
+        align-items: center;
+        gap: abs.rem(32px);
+
+        & > * {
+            cursor: pointer;
+        }
+
+        .logo {
+            width: abs.rem(68px);
+        }
+
+        .nav li {
+            @include abs.ease-in-out(150);
+            &:hover {
+                color: var(--text-color-hover);
+            }
+        }
+    }
+
+    &__user-actions {
+        display: flex;
+        align-items: center;
+        gap: abs.rem(24px);
+
+        & > * {
+            cursor: pointer;
+            @include abs.ease-in-out(150);
+
+            &:hover {
+                color: var(--text-color-hover);
+                path {
+                    fill: var(--text-color-hover);
+                }
+            }
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: abs.rem(14px)
+        }
+    }
+}
