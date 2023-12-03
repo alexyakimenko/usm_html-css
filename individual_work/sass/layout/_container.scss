@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.container {
+    max-width: rem(920px);
+    margin: 0 auto;
+
+    @include breakpoint-down(x-large) {
+        max-width: rem(720px);
+    }
+    @include breakpoint-down(large) {
+        max-width: rem(640px);
+    }
+    @include breakpoint-down(medium) {
+        max-width: rem(528px);
+    }
+    @include breakpoint-down(small) {
+        max-width: rem(380px);
+    }
+    @include breakpoint-down(x-small) {
+        max-width: 100%;
+        padding-inline: rem(64px);
+    }
+}
