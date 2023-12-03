@@ -400,7 +400,7 @@ a {
 .notifications .notification {
   border-radius: 0.5rem;
   padding: 1rem;
-  background-color: var(--background-extra-color);
+  background-color: var(--bg-extra-color);
   width: 100%;
   min-height: 8rem;
   height: 20px;
