@@ -32,6 +32,7 @@
         gap: abs.rem(16px);
         padding-inline: abs.rem(16px);
         justify-content: center;
+        height: auto;
     }
 
     &__main-side {
@@ -47,10 +48,18 @@
             width: abs.rem(68px);
         }
 
+        .nav {
+            display: flex;
+            gap: abs.rem(16px)
+        }
+
         .nav li {
             @include abs.ease-in-out(150);
             &:hover {
                 color: var(--text-color-hover);
+            }
+            a {
+                font-weight: 500;
             }
         }
     }

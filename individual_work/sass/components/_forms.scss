@@ -5,6 +5,12 @@
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
+
+    @include abs.breakpoint-down(small) {
+        flex-direction: column;
+        // padding-top: abs.rem(48px);
+    }
+
     .form {
         display: flex;
         flex-direction: column;

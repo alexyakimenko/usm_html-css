@@ -5,8 +5,9 @@
     width: 100%;
     background-color: var(--bg-color);
     z-index: 1;
-
-    @include abs.breakpoint-down(x-small) {
-        padding-bottom: abs.rem(8px);
+   &[data-page="authentication"] {
+        @include abs.breakpoint-down(small) {
+            position: static;
+        }
     }
 }
