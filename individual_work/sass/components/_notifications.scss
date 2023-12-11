@@ -6,6 +6,7 @@
     position: fixed;
     background-color: rgba(black, 0.5);
     opacity: 0;
+    // Отключает возможность взаимодействия с курсором у данного элемента
     pointer-events: none;
     
     z-index: 2;

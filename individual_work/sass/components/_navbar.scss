@@ -12,7 +12,9 @@
     align-items: center;
 
     flex-wrap: wrap;
-
+    
+    // Контрольные точки для медиа выражений 
+    // см. sass/abstracs/_mixins.scss
     @include abs.breakpoint-down(x-large) {
         max-width: abs.rem(964px);
     }

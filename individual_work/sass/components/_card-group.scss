@@ -64,6 +64,8 @@
         overflow: hidden;
         font-size: abs.rem(16px);
 
+        // Контрольные точки для медиа выражений 
+        // см. sass/abstracs/_mixins.scss
         @include abs.breakpoint-down(x-large) {
             font-size: abs.rem(13px);
         }
@@ -76,6 +78,7 @@
             font-size: abs.rem(16px);
         }
 
+        // Смещение внутри карточки по дефолту
         &__wrapper {
             @include abs.ease-in-out(300);
             transform: translateY(abs.rem(-48px));
@@ -85,6 +88,7 @@
             }
         }
 
+        // Смещение внутри карточки при наведении курсора
         &:hover {
             .card__wrapper {
                 transform: translateY(0);
@@ -103,7 +107,7 @@
                 flex-direction: column;
                 gap: abs.rem(8px)
             }
-
+            // При наведении на значки - курсор исчезает
             & > * {
                 @include abs.ease-in-out(150);
                 &:hover {
@@ -131,7 +135,7 @@
             font-size: 1em;
             @include abs.ease-in-out(150);
         }
-
+        // Тень внизу карточки
         .shadow {
             width: 100%;
             height: 100%;

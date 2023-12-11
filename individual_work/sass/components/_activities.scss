@@ -112,7 +112,7 @@
             height: 100%;
             position: relative;
             border-radius: inherit;
-            @include abs.ease-in-out(300);
+            @include abs.ease-in-out(500);
 
             &:hover {
                 transform: translateX(100%);

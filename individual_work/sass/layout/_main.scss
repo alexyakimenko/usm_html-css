@@ -1,5 +1,6 @@
 @use "../abstracts" as abs;
 
 .main {
+    // Смещение главного контента от фиксированного header-а
     padding-top: calc(abs.rem(67px) * 2);
 }

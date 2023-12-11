@@ -546,4 +546,35 @@ a {
   display: inline-block;
   left: 110%;
   transform: rotate(180deg);
-}/*# sourceMappingURL=challenges.css.map */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, button {
+  background-color: var(--bg-extra-color);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 20rem;
+}
+
+button {
+  transition: all ease-in-out 300ms;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+button:hover {
+  background-color: white;
+  color: var(--bg-extra-color);
+}/*# sourceMappingURL=workshop.css.map */

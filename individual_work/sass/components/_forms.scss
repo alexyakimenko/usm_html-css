@@ -8,7 +8,6 @@
 
     @include abs.breakpoint-down(small) {
         flex-direction: column;
-        // padding-top: abs.rem(48px);
     }
 
     .form {

@@ -514,7 +514,7 @@ a {
   height: 100%;
   position: relative;
   border-radius: inherit;
-  transition: all ease-in-out 300ms;
+  transition: all ease-in-out 500ms;
 }
 .works__field__wrapper:hover {
   transform: translateX(100%);

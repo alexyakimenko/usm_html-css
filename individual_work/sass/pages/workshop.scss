@@ -1,0 +1,37 @@
+@use "../base";
+@use "../themes";
+@use "../layout";
+@use "../components";
+@use "../abstracts" as abs;
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea, button {
+    background-color: var(--bg-extra-color);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 20rem;
+}
+
+button {
+
+    @include abs.ease-in-out(300);
+    font-size: 1.3rem;
+    font-weight: bold;
+    &:hover {
+        background-color: white;
+        color: var(--bg-extra-color)
+    }
+}

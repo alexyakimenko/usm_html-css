@@ -2,6 +2,8 @@
 
 const challenges = document.querySelectorAll(".challenges article");
 
+
+// Переключатель сетки заданий
 challenges.forEach(element => {
     const title = element.querySelector(".card__group--title");
     title.addEventListener("click", () => {
@@ -12,10 +14,11 @@ challenges.forEach(element => {
 const notificationButton = document.querySelector("#notificationButton");
 const notifications = document.querySelector("#notifications")
 
+// Переключатель уведомлений
 notificationButton.addEventListener("click", () => {
     notifications.classList.toggle("open");
 })
-
+// Выключатель уведомлений
 notifications.addEventListener("click", (e) => {
     if(e.target != notifications) return;
     notifications.classList.remove("open");
